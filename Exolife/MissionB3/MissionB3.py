@@ -24,13 +24,13 @@ j=0
 
 while i<nbc:
     while j<nbl:
-        if mat[i,j]<50:  #valeur pixels matrice de base inférieur a 50
+        if mat[i,j]<30:  #valeur pixels matrice de base inférieur a 50
             final[i,j]=0;   #mettre a jour la matrice de l'image final en nuance de gris
             zone1[i,j]=255;  #afficher en blanc toute les zone inférieur a 50
-        elif 50<=mat[i,j]<127:  #valeur dans un intervl de pixel dans matrice de base
+        elif 35<=mat[i,j]<160:  #valeur dans un intervl de pixel dans matrice de base
             final[i,j]=85;
             zone2[i,j]=255;
-        elif 127<=mat[i,j]<230:
+        elif 160<=mat[i,j]<230:
             final[i,j]=180;
             zone3[i,j]=255;
         else:
